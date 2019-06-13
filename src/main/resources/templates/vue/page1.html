@@ -2,10 +2,27 @@
 <html layout:decorator="/layout/DefaultLayout">
 <head>
 <title>page1：這是靜態頁面</title>
-<script th:src="@{/js/vue/page1.js}"></script>
+<script type="module" th:src="@{/js/vue/page1.js}"></script>
+<script type="module" th:src="@{/js/vue/page2.js}"></script>
+
+<!-- <script type="module" th:src="@{/vx-easyui/dist/themes/default/easyui.css}"></script>
+<script type="module" th:src="@{/vx-easyui/dist/themes/icon.css}"></script>
+<script type="module" th:src="@{/vx-easyui/dist/themes/vue.css}"></script> -->
 </head>
 <body>
 	<div layout:fragment="content">
+		<template>
+		<div>
+			<h2>Basic Accordion</h2>
+			<Accordion style="height:250px"> <AccordionPanel :title="'Title1'">
+			<p>Content1</p>
+			</AccordionPanel> <AccordionPanel :title="'Title2'">
+			<p>Content2</p>
+			</AccordionPanel> <AccordionPanel :title="'Title3'">
+			<p>Content3</p>
+			</AccordionPanel> </Accordion>
+		</div>
+		</template>
 	</div>
 </body>
 </html>

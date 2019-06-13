@@ -1,19 +1,36 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="meta">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" th:src="@{/css/icon.css}" />
-    <link rel="stylesheet" type="text/css" th:src="@{/css/vue.css}" />
-    <link rel="stylesheet" type="text/css" th:src="@{/css/easyui.css}" />
-    
-    <!-- vue -->
-    <script th:src="@{/webjars/vue/2.5.16/vue.js}"></script>
-    <script th:src="@{/webjars/vuex/3.1.0/dist/vuex.js}"></script>
-    <script th:src="@{/webjars/vue-router/3.0.2/dist/vue-router.js}"></script>
-    <script th:src="@{/webjars/axios/0.18.0/dist/axios.js}"></script>
-    <script th:src="@{/js/common/vx-easyui.js}"></script>
-    
-    <!-- jquery -->
-    <script th:src="@{/webjars/jquery/3.3.1/dist/jquery.js}"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- <link type="module" rel="stylesheet" th:src="@{/css/icon.css}" />
+<link type="module" rel="stylesheet" th:src="@{/css/vue.css}" />
+<link type="module" rel="stylesheet" th:src="@{/css/easyui.css}" /> -->
+<!---->
+<style scoped>
+@import "../css/icon.css";
+@import "../css/vue.css";
+@import "../css/easyui.css";
+</style>
+<!--     <link type="text/css" rel="stylesheet" th:src="@{/css/icon.css}" />
+    <link type="text/css" rel="stylesheet" th:src="@{/css/vue.css}" />
+    <link type="text/css" rel="stylesheet" th:src="@{/css/easyui.css}" /> -->
+<!--     <link rel="stylesheet" type="text/css" href="../css/icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/vue.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/easyui.css"> -->
+<!--    
+ 	<link rel="stylesheet" th:src="@{/css/icon.css}" />
+    <link rel="stylesheet" th:src="@{/css/vue.css}" />
+    <link rel="stylesheet" th:src="@{/css/easyui.css}" />
+-->
+<!-- vue -->
+<script th:src="@{/webjars/vue/2.5.16/vue.js}"></script>
+<script th:src="@{/webjars/vuex/3.1.0/dist/vuex.js}"></script>
+<script th:src="@{/webjars/vue-router/3.0.2/dist/vue-router.js}"></script>
+<script th:src="@{/webjars/axios/0.18.0/dist/axios.js}"></script>
+<script type="module" th:src="@{/js/common/vx-easyui.js}"></script>
+
+<!-- jquery -->
+<script th:src="@{/webjars/jquery/3.3.1/dist/jquery.js}"></script>
 </head>
 </html>
